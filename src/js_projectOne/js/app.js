@@ -1,5 +1,5 @@
-var scores, roundScore, activePlayer, gamePlaying;
-var diceDOM = document.querySelector(".dice");
+let scores, roundScore, activePlayer, gamePlaying;
+let diceDOM = document.querySelector(".dice");
 
 init();
 
@@ -7,7 +7,7 @@ document.querySelector(".btn-roll").addEventListener("click", function()
 {
     if (gamePlaying) {
         // 1. random number
-        var dice = Math.floor(Math.random() * 6) + 1;
+        let dice = Math.floor(Math.random() * 6) + 1;
 
         // 2. display the result
         diceDOM.style.display = "block";
